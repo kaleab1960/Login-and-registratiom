@@ -1,0 +1,75 @@
+/* GLOBAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARD STYLE (used for both forms) */
+.card{
+    background: rgba(0,0,0,0.85);
+    border: 1px solid #ffffff30;
+    border-radius: 12px;
+    padding: 25px 30px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* HEADINGS */
+.card h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* FORM FIELD */
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label{
+    color: #ccc;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.field input,
+.field select,
+.field textarea{
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* INPUT FOCUS EFFECT */
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+    border: 2px solid #00ffcc;
+}
+
+/* GRID FOR REGISTER */
+.grid
