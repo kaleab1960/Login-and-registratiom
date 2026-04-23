@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Access</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="container">
+
+    <!-- LOGIN BOX -->
+    <div class="card login-card">
+        <form action="login.php" method="POST">
+            <h2>Sign In</h2>
+
+            <div class="field">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Enter username">
+            </div>
+
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn primary">Login</button>
+                <button type="reset" class="btn secondary">Reset</button>
+            </div>
+
+            <p class="switch">New here? <a href="#">Create account</a></p>
+        </form>
+    </div>
+
+    <!-- REGISTER BOX -->
+    <div class="card register-card">
+        <form action="insert.php" method="POST">
+            <h2>Create Account</h2>
+
+            <div class="grid">
+                <div class="field">
+                    <label>Full Name</label>
+                    <input type="text" name="fullname">
+                </div>
+
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" name="username">
+                </div>
+
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" name="password">
+                </div>
+
+                <div class="field">
+                    <label>Department</label>
+                    <select name="department">
+                        <option value="CSE">CSE</option>
+                        <option value="SE">Software Engineering</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EPCE">EPCE</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="extra">
+                <div class="field">
+                    <label>Gender</label>
+                    <div class="inline">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Interests</label>
+                    <div class="inline">
+                        <label><input type="checkbox" name="hobbies[]" value="reading"> Reading</label>
+                        <label><input
